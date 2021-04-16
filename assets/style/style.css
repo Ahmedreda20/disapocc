@@ -866,6 +866,9 @@ html, body {
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper table .grey_style {
   color: var(--subTileColor);
 }
+.section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper tr:last-child td {
+  font-size: calc(var(--fontSize) + 3px);
+}
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper tr td:last-child {
   text-align: right;
   text-align: -webkit-right;
