@@ -736,6 +736,11 @@ html, body {
   height: auto;
   padding: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .section_container .content_container .contentBox .content_container_wrapper .by_form .form_group {
+    padding: 20px 0px !important;
+  }
+}
 .section_container .content_container .contentBox .content_container_wrapper .by_form .form_group .form_elem {
   width: 100%;
   max-width: 100%;
@@ -767,7 +772,7 @@ html, body {
   width: 100%;
   position: relative;
 }
-.section_container .content_container .contentBox .content_container_wrapper .by_form .form_group .item_wrapper i {
+.section_container .content_container .contentBox .content_container_wrapper .by_form .form_group .item_wrapper img, .section_container .content_container .contentBox .content_container_wrapper .by_form .form_group .item_wrapper i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -793,30 +798,41 @@ html, body {
   color: var(--fieldPlaceholderColor);
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details {
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
   position: relative;
+  grid-template-columns: auto auto;
+  gap: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .section_container .content_container .contentBox .content_container_wrapper .payment_details {
-    flex-direction: column;
-    -ms-flex-direction: column;
+    grid-template-columns: none;
+    display: flex !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item {
-  min-width: 40%;
+  width: 100%;
   padding: 10px;
   position: relative;
+  display: block;
 }
 @media only screen and (max-width: 768px) {
   .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item {
     width: 100%;
   }
+}
+.section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .form_group {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .title {
   color: var(--textColor0);
@@ -850,8 +866,12 @@ html, body {
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper table .grey_style {
   color: var(--subTileColor);
 }
+.section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper tr td:last-child {
+  text-align: right;
+  text-align: -webkit-right;
+}
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper td {
-  padding: 12px 20px;
+  padding: 14px 20px;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper .form_group {
   display: block;
@@ -869,7 +889,7 @@ html, body {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
   border: 1px solid var(--subTileColor);
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper .form_group img {
   vertical-align: middle;
@@ -948,8 +968,9 @@ html, body {
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper .warn_msg {
   text-align: right;
-  font-size: calc(var(--fontSize - 4px));
+  font-size: calc(var(--fontSize ) - 3px);
   display: table;
+  margin-left: auto;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper .warn_msg a {
   color: var(--iconsColor0);

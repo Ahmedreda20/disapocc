@@ -201,10 +201,13 @@
                 <div class="form_group">
                   <label for="disburse">I Want To ? :</label>
                   <div class="item_wrapper left_icon">
-                    <i
-                      class="fas fa-mobile-alt"
-                      style="font-size: 17px; left: 13px"
-                    ></i>
+                    <img
+                      src="assets/images/export.svg"
+                      alt="export icon"
+                      width="18"
+                      height="18"
+                      style="left: 12px"
+                    />
                     <select name="disburse" id="disburse" class="form_elem">
                       <option value="">disburse</option>
                     </select>
@@ -288,16 +291,10 @@
                         />
                         MTN Mobile Money
                       </label>
-                      <input
-                        type="tel"
-                        name="phone"
-                        id="phoneNumber0"
-                        list="phoneNumber"
-                        placeholder="Select MTN Phone Number..."
-                      />
-                      <datalist id="phoneNumber">
-                        <option value="phone">000000000</option>
-                      </datalist>
+                      <select name="mobile" id="phoneNumber0">
+                        <option value="">Select MTN Phone Number..</option>
+                      </select>
+
                       <span class="warn_msg">
                         Don't Have An MTN Yet Registered?
                         <a href="#">Register One</a>
