@@ -867,14 +867,14 @@ html, body {
   color: var(--subTileColor);
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper tr:last-child td {
-  font-size: calc(var(--fontSize) + 3px);
+  font-size: calc(var(--fontSize) + 2px);
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper tr td:last-child {
   text-align: right;
   text-align: -webkit-right;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper td {
-  padding: 14px 20px;
+  padding: 10px;
 }
 .section_container .content_container .contentBox .content_container_wrapper .payment_details .payment_item .payment_wrapper .form_group {
   display: block;
